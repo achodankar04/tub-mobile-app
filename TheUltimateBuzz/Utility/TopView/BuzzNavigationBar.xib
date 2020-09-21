@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuzzNavigationBar" customModule="CDHApplication">
+            <connections>
+                <outlet property="contentViewBottom" destination="4yW-Vj-jxj" id="Mpu-g8-OpM"/>
+                <outlet property="leftImgView" destination="F25-00-MIF" id="Izz-HK-YAY"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="xp5-38-ePN"/>
+                <outlet property="rightButton" destination="mHF-D2-r43" id="nAB-lL-Vf0"/>
+                <outlet property="titleLable" destination="Uk7-Yg-d0z" id="lh4-ws-kGh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-D2-r43">
+                    <rect key="frame" x="366" y="62" width="28" height="28"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="N6u-VB-h58"/>
+                        <constraint firstAttribute="width" constant="28" id="lxU-NT-Brh"/>
+                    </constraints>
+                    <state key="normal" image="user"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="button_navigation_right"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Uk7-Yg-d0z">
+                    <rect key="frame" x="20" y="60" width="330" height="30"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4ZE-d7-JjC"/>
+                        <constraint firstAttribute="width" constant="330" id="gmW-Wa-bx0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="label_screen_title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1024" translatesAutoresizingMaskIntoConstraints="NO" id="F25-00-MIF">
+                    <rect key="frame" x="20" y="62" width="64" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="bdt-tF-bDi"/>
+                        <constraint firstAttribute="width" constant="64" id="kvK-d8-0bl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="F25-00-MIF" secondAttribute="bottom" constant="11" id="4yW-Vj-jxj"/>
+                <constraint firstItem="mHF-D2-r43" firstAttribute="leading" secondItem="Uk7-Yg-d0z" secondAttribute="trailing" constant="16" id="DCc-To-aI3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mHF-D2-r43" secondAttribute="trailing" constant="20" id="Kqg-rw-s5a"/>
+                <constraint firstItem="Uk7-Yg-d0z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Tyv-h8-67T"/>
+                <constraint firstItem="Uk7-Yg-d0z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Vaw-ce-IXD"/>
+                <constraint firstItem="mHF-D2-r43" firstAttribute="top" secondItem="F25-00-MIF" secondAttribute="top" id="sWS-br-Our"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Uk7-Yg-d0z" secondAttribute="bottom" constant="30" id="wSS-oS-ohm"/>
+                <constraint firstItem="F25-00-MIF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="xbc-J8-w1m"/>
+                <constraint firstItem="F25-00-MIF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xdf-kD-Kg8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="custom_navigationbar_content_view"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-114" y="11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_1024" width="1024" height="1024"/>
+        <image name="user" width="64" height="64"/>
+    </resources>
+</document>
